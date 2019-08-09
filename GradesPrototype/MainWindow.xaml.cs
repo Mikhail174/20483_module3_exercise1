@@ -66,7 +66,7 @@ namespace GradesPrototype
         // TODO: Exercise 1: Task 3b: Handle successful logon
         // Update the display and show the data for the logged on user
         // Handle successful logon
-        private void Logon_Success(object sender, EventArgs e)
+        private void LogonSuccess(object sender, EventArgs e)
         {
             // Update the display and show the data for the logged on user
             logonPage.Visibility = Visibility.Collapsed;
@@ -94,7 +94,8 @@ namespace GradesPrototype
         // Set the global context to the name of the student and call the GotoStudentProfile method to display the details of the student
         private void studentsPage_StudentSelected(object sender, StudentEventArgs e)
         {
-
+            SessionContext.CurrentStudent = e.Child;
+            GotoStudentProfile();
         }
         #endregion
 
