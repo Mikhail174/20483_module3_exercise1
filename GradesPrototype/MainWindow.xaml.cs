@@ -66,7 +66,7 @@ namespace GradesPrototype
         // TODO: Exercise 1: Task 3b: Handle successful logon
         // Update the display and show the data for the logged on user
         // Handle successful logon
-        private void LogonSuccess(object sender, EventArgs e)
+        private void Logon_Success(object sender, EventArgs e)
         {
             // Update the display and show the data for the logged on user
             logonPage.Visibility = Visibility.Collapsed;

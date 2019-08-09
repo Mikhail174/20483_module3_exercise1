@@ -29,7 +29,7 @@ namespace GradesPrototype.Views
 
         #region Event Members
         // TODO: Exercise 1: Task 2a: Define the LogonSuccess event handler
-        public event EventHandler LogonSuccess;
+        public event EventHandler Logon_Success;
         #endregion
 
         #region Logon Validation
@@ -47,9 +47,9 @@ namespace GradesPrototype.Views
                 SessionContext.CurrentStudent = "Eric Gruber";
             }
             // Raise the LogonSuccess event
-            if (LogonSuccess != null)
+            if (Logon_Success != null)
             {
-                LogonSuccess(this, null);
+                Logon_Success(this, null);
             }
         }
         #endregion
